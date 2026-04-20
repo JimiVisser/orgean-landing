@@ -6,10 +6,11 @@
 }
 
 :root {
-    --color-bg: #FAF7F4;
+    --color-bg: #F7F3EE;
     --color-text: #2C2825;
     --color-text-muted: #6B635C;
-    --color-accent: #1A1A1A;
+    --color-accent: #C4704B;
+    --color-accent-hover: #B0603F;
     --color-warm-1: #E8E0D6;
     --color-warm-2: #D4C8B8;
     --color-warm-3: #C4B8A8;
@@ -27,9 +28,17 @@ body {
     font-family: var(--font-main);
     background-color: var(--color-bg);
     color: var(--color-text);
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: 1.7;
+    font-size: 17px;
     -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
 }
 
 .container {
@@ -48,7 +57,8 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: var(--color-text);
-    letter-spacing: -0.02em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* Hero */
@@ -88,11 +98,12 @@ body {
     text-decoration: none;
     font-size: 0.9375rem;
     font-weight: 500;
-    transition: opacity 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .hero-cta:hover {
-    opacity: 0.85;
+    background: var(--color-accent-hover);
+    color: #fff;
 }
 
 .hero-image {
@@ -197,12 +208,12 @@ body {
     font-size: 0.9375rem;
     font-weight: 500;
     cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: background 0.2s ease;
     white-space: nowrap;
 }
 
 .form-group button:hover {
-    opacity: 0.85;
+    background: var(--color-accent-hover);
 }
 
 .form-group button:disabled {
@@ -229,9 +240,32 @@ body {
     border-top: 1px solid var(--color-warm-1);
 }
 
-.footer p {
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-tagline {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 0.8125rem;
+    text-decoration: none;
+}
+
+.footer-copy {
     font-size: 0.8125rem;
     color: var(--color-text-muted);
+    margin-top: 8px;
 }
 
 /* Responsive */
