@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orgean — Light that lives everywhere.</title>
+    <meta name="description" content="Orgean crafts indoor/outdoor lamps designed to move with your life. Sign up for launch notification.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Orgean</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h1 class="hero-tagline">Light that lives everywhere.</h1>
+                    <p class="hero-sub">Indoor/outdoor lamps designed to move with your life. One light, every setting.</p>
+                    <a href="#waitlist" class="hero-cta">Join the waitlist</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="500" rx="12" fill="#E8E0D6"/>
+                            <circle cx="200" cy="200" r="60" fill="#C4B8A8"/>
+                            <rect x="185" y="260" width="30" height="120" rx="15" fill="#C4B8A8"/>
+                            <ellipse cx="200" cy="400" rx="80" ry="20" fill="#D4C8B8"/>
+                            <circle cx="200" cy="200" r="40" fill="#F5EDE4" opacity="0.6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story">
+            <div class="container">
+                <h2 class="story-heading">Who we are</h2>
+                <div class="story-content">
+                    <p>We noticed something: the best evenings don't stay in one place. They start at the table, drift to the garden, end on the porch. But the light never follows.</p>
+                    <p>Orgean makes lamps that move with you — weatherproof enough for rain, refined enough for your living room. Warm light, honest materials, no compromises between indoors and out.</p>
+                    <p>We're launching soon. One collection. Every setting.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="waitlist" id="waitlist">
+            <div class="container">
+                <h2 class="waitlist-heading">Be first to know</h2>
+                <p class="waitlist-sub">Sign up for launch notification. No spam, just one email when we're live.</p>
+                <form class="waitlist-form" id="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/orgean" method="post" target="_blank">
+                    <div class="form-group">
+                        <input type="email" name="email" id="email-input" placeholder="your@email.com" required aria-label="Email address">
+                        <button type="submit" id="submit-btn">Notify me</button>
+                    </div>
+                    <p class="form-note">We respect your inbox. Unsubscribe anytime.</p>
+                    <p class="form-success" id="form-success" hidden>Thanks! We'll be in touch.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Orgean. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
