@@ -6,16 +6,18 @@
 }
 
 :root {
-    --color-bg: #F7F3EE;
-    --color-text: #2C2825;
+    --color-bg: #F5F0E8;
+    --color-text: #2C2C2C;
     --color-text-muted: #6B635C;
-    --color-accent: #C4704B;
-    --color-accent-hover: #B0603F;
+    --color-accent: #C4775A;
+    --color-accent-hover: #B06548;
+    --color-brass: #C8A96E;
     --color-warm-1: #E8E0D6;
     --color-warm-2: #D4C8B8;
     --color-warm-3: #C4B8A8;
     --color-surface: #FFFFFF;
     --font-main: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'DM Serif Display', Georgia, serif;
     --container-max: 1120px;
     --spacing-section: 120px;
 }
@@ -54,11 +56,12 @@ a:hover {
 
 .logo {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none;
     color: var(--color-text);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    text-transform: lowercase;
+    font-family: var(--font-heading);
 }
 
 /* Hero */
@@ -74,10 +77,11 @@ a:hover {
 }
 
 .hero-tagline {
+    font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.03em;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
     margin-bottom: 24px;
 }
 
@@ -149,6 +153,52 @@ a:hover {
     font-weight: 500;
 }
 
+/* Features */
+.features {
+    padding: var(--spacing-section) 0;
+    border-top: 1px solid var(--color-warm-1);
+}
+
+.features-heading {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: 48px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 64px;
+}
+
+.feature-card {
+    max-width: 440px;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    color: var(--color-brass);
+}
+
+.feature-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.feature-card p {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
 /* Waitlist */
 .waitlist {
     padding: var(--spacing-section) 0;
@@ -156,9 +206,10 @@ a:hover {
 }
 
 .waitlist-heading {
+    font-family: var(--font-heading);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-weight: 400;
+    letter-spacing: -0.01em;
     margin-bottom: 12px;
 }
 
@@ -260,6 +311,11 @@ a:hover {
 .footer-links a {
     font-size: 0.8125rem;
     text-decoration: none;
+    color: var(--color-brass);
+}
+
+.footer-links a:hover {
+    color: var(--color-accent);
 }
 
 .footer-copy {
@@ -289,6 +345,11 @@ a:hover {
 
     .hero-placeholder svg {
         max-width: 280px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .form-group {

@@ -7,13 +7,14 @@
     <meta name="description" content="Orgean crafts portable lamps designed to move with your life. From table to terrace. Sign up for launch notification.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer data-domain="orgean.com" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="/" class="logo">Orgean</a>
+            <a href="/" class="logo">orgean</a>
         </div>
     </header>
 
@@ -22,17 +23,38 @@
             <div class="container hero-inner">
                 <div class="hero-content">
                     <h1 class="hero-tagline">Light that lives everywhere.</h1>
-                    <p class="hero-sub">Portable lamps designed to move with your life. From table to terrace, one light, every setting.</p>
+                    <p class="hero-sub">Portable lamps designed to dissolve the boundary between indoors and out.</p>
                     <a href="#waitlist" class="hero-cta">Join the waitlist</a>
                 </div>
                 <div class="hero-image">
                     <div class="hero-placeholder">
                         <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Background -->
                             <rect width="400" height="500" rx="12" fill="#E8E0D6"/>
-                            <circle cx="200" cy="200" r="60" fill="#C4B8A8"/>
-                            <rect x="185" y="260" width="30" height="120" rx="15" fill="#C4B8A8"/>
-                            <ellipse cx="200" cy="400" rx="80" ry="20" fill="#D4C8B8"/>
-                            <circle cx="200" cy="200" r="40" fill="#F5EDE4" opacity="0.6"/>
+                            <!-- Window / doorway suggesting indoor-outdoor threshold -->
+                            <rect x="80" y="40" width="240" height="340" rx="6" fill="#D4C8B8"/>
+                            <rect x="90" y="50" width="220" height="320" rx="4" fill="#C8BFB0"/>
+                            <!-- Dusk sky gradient through doorway -->
+                            <rect x="90" y="50" width="220" height="200" rx="4" fill="#D4C0A8"/>
+                            <rect x="90" y="50" width="220" height="100" rx="4" fill="#C8A96E" opacity="0.3"/>
+                            <!-- Table surface -->
+                            <rect x="100" y="340" width="200" height="8" rx="2" fill="#B0A494"/>
+                            <!-- Lamp base -->
+                            <ellipse cx="200" cy="340" rx="32" ry="6" fill="#C8A96E"/>
+                            <!-- Lamp stem -->
+                            <rect x="194" y="270" width="12" height="70" rx="6" fill="#C8A96E"/>
+                            <!-- Lamp shade -->
+                            <path d="M170 270 Q185 230 200 220 Q215 230 230 270 Z" fill="#F5F0E8" opacity="0.9"/>
+                            <!-- Warm glow -->
+                            <circle cx="200" cy="250" r="50" fill="#C8A96E" opacity="0.12"/>
+                            <circle cx="200" cy="250" r="30" fill="#C8A96E" opacity="0.08"/>
+                            <!-- Floor / terrace tiles -->
+                            <rect x="60" y="390" width="280" height="90" rx="4" fill="#D4C8B8"/>
+                            <line x1="60" y1="420" x2="340" y2="420" stroke="#C4B8A8" stroke-width="1"/>
+                            <line x1="60" y1="450" x2="340" y2="450" stroke="#C4B8A8" stroke-width="1"/>
+                            <line x1="140" y1="390" x2="140" y2="480" stroke="#C4B8A8" stroke-width="1"/>
+                            <line x1="200" y1="390" x2="200" y2="480" stroke="#C4B8A8" stroke-width="1"/>
+                            <line x1="260" y1="390" x2="260" y2="480" stroke="#C4B8A8" stroke-width="1"/>
                         </svg>
                     </div>
                 </div>
@@ -46,6 +68,53 @@
                     <p>We noticed something: the best evenings don't stay in one place. They start at the table, drift to the garden, end on the porch. But the light never follows.</p>
                     <p>Orgean makes lamps that move with you — weatherproof enough for rain, refined enough for your living room. Warm light, honest materials, no compromises between indoors and out.</p>
                     <p>We're launching soon. One collection. Every evening.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="features-heading">What makes Orgean different</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M18 32h12M20 36h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M24 8V4M36 20h4M8 20h4M33 11l3-3M15 11l-3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <h3>Indoor elegance, outdoor endurance</h3>
+                        <p>IP65 weatherproof construction meets refined interior design. Rain, sun, or candlelit dinner — one lamp handles it all.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="24" cy="24" r="6" fill="currentColor" opacity="0.3"/>
+                            <path d="M24 8v4M24 36v4M8 24h4M36 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <h3>2700K warm glow</h3>
+                        <p>Always warm, always dimmable. The colour temperature of golden hour, whenever you want it.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="8" width="24" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="12" y1="14" x2="36" y2="14" stroke="currentColor" stroke-width="1.5"/>
+                            <line x1="12" y1="34" x2="36" y2="34" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        <h3>Honest materials</h3>
+                        <p>Brass, ceramic, opal glass, oak. Every component is chosen to age beautifully and last for years.</p>
+                    </div>
+                    <div class="feature-card">
+                        <svg class="feature-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 36h32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <rect x="14" y="16" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M14 26h20" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+                            <path d="M24 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M20 10l4-2 4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>One lamp, every room</h3>
+                        <p>Carry it from the dining table to the terrace in one hand. No cords, no constraints — just light where you need it.</p>
+                    </div>
                 </div>
             </div>
         </section>
