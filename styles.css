@@ -219,6 +219,14 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.social-proof {
+    font-size: 0.875rem;
+    color: var(--color-brass);
+    font-weight: 500;
+    margin-bottom: 32px;
+    letter-spacing: 0.02em;
+}
+
 .waitlist-form {
     max-width: 480px;
 }

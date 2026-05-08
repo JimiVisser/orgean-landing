@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script defer data-domain="orgean.com" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="orgean.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 <body>
     <header class="header">
@@ -24,7 +25,7 @@
                 <div class="hero-content">
                     <h1 class="hero-tagline">Light that lives everywhere.</h1>
                     <p class="hero-sub">Portable lamps designed to dissolve the boundary between indoors and out.</p>
-                    <a href="#waitlist" class="hero-cta">Join the waitlist</a>
+                    <a href="#waitlist" class="hero-cta plausible-event-name=CTA+Click">Join the waitlist</a>
                 </div>
                 <div class="hero-image">
                     <div class="hero-placeholder">
@@ -123,6 +124,7 @@
             <div class="container">
                 <h2 class="waitlist-heading">Be first to know</h2>
                 <p class="waitlist-sub">Sign up for launch notification. No spam, just one email when we're live.</p>
+                <p class="social-proof">Join a growing community of design-conscious homes waiting for launch.</p>
                 <form class="waitlist-form" id="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/orgean" method="post" target="_blank">
                     <div class="form-group">
                         <input type="email" name="email" id="email-input" placeholder="your@email.com" required aria-label="Email address">

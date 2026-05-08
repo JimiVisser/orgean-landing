@@ -32,6 +32,10 @@
         emailInput.value = '';
         successMsg.hidden = false;
         submitBtn.textContent = 'Done!';
+        // Track conversion in Plausible
+        if (window.plausible) {
+          plausible('Waitlist Signup');
+        }
         setTimeout(() => {
           submitBtn.textContent = 'Notify me';
           submitBtn.disabled = false;
