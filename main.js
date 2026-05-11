@@ -1,5 +1,5 @@
 // Waitlist form enhancement
-// Works with Buttondown's embed subscribe endpoint
+// Works with Mailchimp's embed subscribe endpoint
 // Falls back gracefully if JS is disabled (form posts directly)
 
 (function () {
@@ -20,29 +20,22 @@
     submitBtn.textContent = 'Sending...';
 
     try {
-      const response = await fetch('https://buttondown.com/api/emails/embed-subscribe/orgean', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams({ email: email }),
-      });
+      // Mailchimp requires JSONP for cross-origin — use no-cors fetch as fire-and-forget
+      const formData = new URLSearchParams(new FormData(form));
+      const action = form.action.replace('/post', '/post-json') + '&c=__cb';
+      await fetch(action + '&' + formData.toString(), { mode: 'no-cors' });
 
-      if (response.ok || response.status === 303) {
-        emailInput.value = '';
-        successMsg.hidden = false;
-        submitBtn.textContent = 'Done!';
-        // Track conversion in Plausible
-        if (window.plausible) {
-          plausible('Waitlist Signup');
-        }
-        setTimeout(() => {
-          submitBtn.textContent = 'Notify me';
-          submitBtn.disabled = false;
-        }, 3000);
-      } else {
-        throw new Error('Submission failed');
+      emailInput.value = '';
+      successMsg.hidden = false;
+      submitBtn.textContent = 'Done!';
+      // Track conversion in Plausible
+      if (window.plausible) {
+        plausible('Waitlist Signup');
       }
+      setTimeout(() => {
+        submitBtn.textContent = 'Notify me';
+        submitBtn.disabled = false;
+      }, 3000);
     } catch (err) {
       // Fallback: submit the form normally
       form.target = '_blank';

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script defer data-domain="orgean.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+    <script defer data-domain="jimivisser.github.io" src="https://plausible.io/js/script.tagged-events.js"></script>
     <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 <body>
@@ -125,9 +125,12 @@
                 <h2 class="waitlist-heading">Be first to know</h2>
                 <p class="waitlist-sub">Sign up for launch notification. No spam, just one email when we're live.</p>
                 <p class="social-proof">Join a growing community of design-conscious homes waiting for launch.</p>
-                <form class="waitlist-form" id="waitlist-form" action="https://buttondown.com/api/emails/embed-subscribe/orgean" method="post" target="_blank">
+                <!-- Mailchimp embed form — update action URL + hidden u/id fields after account setup -->
+                <form class="waitlist-form" id="waitlist-form" action="https://gmail.us00.list-manage.com/subscribe/post" method="post" target="_blank">
+                    <input type="hidden" name="u" value="MAILCHIMP_U_VALUE">
+                    <input type="hidden" name="id" value="MAILCHIMP_LIST_ID">
                     <div class="form-group">
-                        <input type="email" name="email" id="email-input" placeholder="your@email.com" required aria-label="Email address">
+                        <input type="email" name="EMAIL" id="email-input" placeholder="your@email.com" required aria-label="Email address">
                         <button type="submit" id="submit-btn">Notify me</button>
                     </div>
                     <p class="form-note">We respect your inbox. Unsubscribe anytime.</p>
